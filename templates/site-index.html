@@ -1,0 +1,13 @@
+{% extends "site-base.html" %}
+
+{% block content %}
+<h4>{{ author }}</h4>
+
+<ul>
+  {% for chapter in chapters %}
+    <li>
+      <a href="{{ chapter['title'] }}.html">{{ chapter['title'] }} ({{ chapter['paragraphs'] | length }})</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}
