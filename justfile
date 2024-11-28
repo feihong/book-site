@@ -6,3 +6,6 @@ install:
 
 site dir:
   python generate_site.py {{dir}}
+
+clean:
+  rm output/*
